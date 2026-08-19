@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Turn Exporter",
+  "version": "0.1.0",
+  "description": "Export individual ChatGPT turns to Markdown.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*"
+      ],
+      "js": [
+  "markdown.js",
+  "content.js"
+],
+      "run_at": "document_idle"
+    }
+  ]
+}
